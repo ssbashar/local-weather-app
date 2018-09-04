@@ -81,17 +81,34 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-.main-container {
+.main_container {
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -2;
+  z-index: -1;
   opacity: 1;
-  background-color: linear-gradient(to bottom, #B290FF, #2E1D65);
+
+  background: linear-gradient(to bottom, #B290FF, #2E1D65);
   transition: opacity 300ms linear;
 }
+
+.bb {
+
+  margin: auto;
+  width: 18%;
+  border: none;
+  padding: 5px;
+
+}
+
+input 
+{
+  text-align: center;
+}
+
+
 
 
 
