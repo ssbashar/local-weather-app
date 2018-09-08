@@ -1,4 +1,4 @@
-<div class='weather_card'>
+<div *ngIf = 'current' class='weather_card'>
   <div>
     <span>{{current.city}}, {{current.country}}</span>
     <span>{{current.date | date: 'fullDate'}}</span>
