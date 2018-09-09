@@ -34,9 +34,8 @@ export class WeatherService {
   constructor (private httpClient: HttpClient) {}
   
   getCurrentWeather(city: string, country: string) {
-      return this.httpClient.get<ICurrentWeatherData>(
-          `${environment.baseUrl}
-          api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${environment.appId}`
+    return this.httpClient.get<ICurrentWeatherData>(
+      `${environment.baseUrl}api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${environment.appId}`
       ).pipe(
         map(data => this.transformToICurrentWeather(data))
       )

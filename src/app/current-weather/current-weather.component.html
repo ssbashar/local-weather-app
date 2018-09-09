@@ -1,14 +1,17 @@
-<div *ngIf = 'current' class='weather_card'>
+<div class='weather_card'>
   <div>
-    <span>{{current.city}}, {{current.country}}</span>
-    <span>{{current.date | date: 'fullDate'}}</span>
+    <span style="font-size: 35px">{{current.city}}, {{current.country}}</span>
+    <br><br>
+    <span style="font-size: 20px">{{current.date | date: 'fullDate'}}</span>
+  </div>
 
-  </div>
   <div>
-    <img [src] = 'current.image' >
-    <span>{{current.temperature | number:'1.0-0'}}F</span>
-  </div>
-  <div>
-    {{current.description}}
+    <img  height="150px" width="150px" [src] = 'current.image' >
+    <br>
+    <span style="font-size: 50px">{{current.temperature | number:'1.0-0'}}&#8457;</span>
+    <br>
+    <span style="font-size: 20px">{{current.description}}</span>
   </div>
 </div>
+  
+

@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { MatToolbarModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { CurrentWeatherComponent } from './current-weather/current-weather.component';
@@ -15,7 +16,8 @@ import { WeatherService } from './weather/weather.service';
   // importing explicitly so that all its children can all use it
   imports: [
     BrowserModule, 
-    HttpClientModule
+    HttpClientModule,
+    MatToolbarModule,
   ],
 
   // this is provider or API services that you are using
