@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 import { ICurrentWeather } from '../icurrent-weather';
 import { map } from 'rxjs/operators';
+import { IWeatherService } from './iweather-service';
 
 interface ICurrentWeatherData {
   weather: [
@@ -29,7 +30,7 @@ interface ICurrentWeatherData {
   providedIn: 'root'
 })
 
-export class WeatherService {
+export class WeatherService implements IWeatherService {
 
   constructor (private httpClient: HttpClient) {}
   
