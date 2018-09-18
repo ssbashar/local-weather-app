@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { MatToolbarModule, MatFormFieldModule, MatInputModule, MatIconModule } from '@angular/material';
+import { MatToolbarModule, MatFormFieldModule, MatInputModule, MatIconModule, MatButtonModule, MatCardModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { CurrentWeatherComponent } from './current-weather/current-weather.component';
@@ -28,11 +28,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatInputModule,
     MatIconModule,
     BrowserAnimationsModule,
+    MatButtonModule,
+    MatCardModule,
   ],
   exports: [
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
+    MatButtonModule,
+    MatCardModule,
   ],
 
   // this is provider or API services that you are using
