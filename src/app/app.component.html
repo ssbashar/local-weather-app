@@ -20,12 +20,12 @@
   <section style='text-align: center'>
     <h1 style='text-align: center'>Your city, your forecast, right now!</h1>
     <div fxLayoutAlign='center'>
-        <app-city-search></app-city-search>
+        <app-city-search (searchEvent)='doSearch($event)'></app-city-search>
 <!--         <input class='form_input' type='text' placeholder='enter your city or zip code' >
  -->    </div>
     <mat-card>
       <h2>Current Weather</h2>
-        <app-current-weather></app-current-weather>
+        <app-current-weather [current]='currentWeather'></app-current-weather>
       </mat-card>
 
   </section>
