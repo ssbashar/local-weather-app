@@ -4,7 +4,7 @@
     <input matInput placeholder='Enter city or zip' 
     aria-label='City or Zip' 
     [formControl]='search'>
-    <mat-hint> Specify country like 'Paris', US' </mat-hint>
+    <mat-hint style="inline-size: 5x"> Specify country like 'Paris', US' </mat-hint>
 
     <mat-error *ngIf='search.invalid'>
       {{getErrorMessage()}}
