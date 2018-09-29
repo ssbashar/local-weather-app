@@ -37,6 +37,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
 
   // this is provider or API services that you are using
